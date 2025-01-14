@@ -22,7 +22,7 @@ function IconLink({
 
 export default function ContactCard() {
   return (
-    <div className="flex flex-col gap-32 lg:w-[344px] w-full items-center text-center dark:bg-white dark:text-black py-6 px-8 rounded-2xl">
+    <div className="sticky flex flex-col gap-32 lg:w-[344px] w-full top-9 items-center text-center dark:bg-white dark:text-black py-6 px-8 rounded-2xl">
       <div>
         <div>
           <Image

@@ -10,13 +10,13 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #ededed; /*yellow*/
   }
 }
 
 p {
   font-size: 16px;
-  color: #998f8f;
+  color: rgb(106, 107, 110);
 }
 
 body {

@@ -9,6 +9,7 @@ import { useAnimate, motion } from "motion/react";
 
 import iokeep from "@/assets/iokeep.png";
 import proactive from "@/assets/proactive.png";
+import portfolio_v2 from "@/assets/portfolio v2.png";
 import ArrowUpRight02Icon from "@/assets/arrow-up-right";
 import SolidLink from "@/layouts/SolidLink";
 
@@ -47,12 +48,19 @@ export default function ProjectsSection() {
     <SectionLayout>
       <div>
         <H1>Personal Projects</H1>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-6">
           <ProjectItem
             key={"iokeep"}
             imageSrc={iokeep}
             title={"IOKEEP"}
             description="Iokeep is a digital rich-text note taking web application which allows users to create and manage notes accross devices"
+            href="/"
+          />
+          <ProjectItem
+            key={"Portfolio_v2"}
+            imageSrc={portfolio_v2}
+            title={"Portfolio v2"}
+            description="My previous portfolio where i showcased my projects and experience."
             href="/"
           />
           <ProjectItem

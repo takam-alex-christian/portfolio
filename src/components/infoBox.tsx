@@ -6,8 +6,8 @@ export default function InfoBox({
   text: string[];
 }) {
   return (
-    <div className="flex flex-col items-center ">
-      <p className="flex flex-row justify-start text-7xl font-bold tracking-wider dark:text-white">
+    <div className="flex flex-col items-center">
+      <p className="flex flex-row justify-start text-7xl font-bold tracking-wider ">
         +<span>{number}</span>
       </p>
       <div className="flex flex-col text-center">

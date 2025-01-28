@@ -5,9 +5,11 @@ import InfoBox from "@/components/infoBox";
 import SectionLayout from "@/layouts/SectionLayout";
 
 import H1 from "@/components/H1";
+import Link from "next/link";
+import Download04Icon from "@/assets/download-04-stroke-rounded";
 export default function HomeSection() {
   return (
-    <section>
+    <SectionLayout>
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-4">
           <H1>SOFTWARE ENGINEER</H1>
@@ -18,10 +20,20 @@ export default function HomeSection() {
         </div>
         <div className="flex flex-row gap-10 justify-start">
           <InfoBox number={2} text={["Years of", "experience"]} />
-          <InfoBox number={11} text={["Projects", "shipped"]} />
-          <InfoBox number={10} text={["Clients", "serviced"]} />
+          <InfoBox number={11} text={["Projects", "Delivered"]} />
+          <InfoBox number={10} text={["Clients", "served"]} />
+        </div>
+        <div className="flex flex-col gap-6 w-max items-start">
+          <button className=" cap-b w-max">Let's get in touch</button>
+          <Link
+            href="#"
+            className=" cap-l flex flex-row gap-2 font-semibold w-max border-2 border-black p-4 rounded-2xl"
+          >
+            <Download04Icon />
+            Download a copy of my cv
+          </Link>
         </div>
       </div>
-    </section>
+    </SectionLayout>
   );
 }

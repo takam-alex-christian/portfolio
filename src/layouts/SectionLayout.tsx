@@ -7,12 +7,12 @@ export default function SectionLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <section className=" box-border pt-28">
       <motion.div
         initial={{ opacity: 0, top: 40 }}
         whileInView={{ opacity: 1, top: 0 }}
         viewport={{ once: true }}
-        className="pt-28"
+        className=""
       >
         {children}
       </motion.div>

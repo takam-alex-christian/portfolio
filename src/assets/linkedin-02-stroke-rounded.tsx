@@ -6,7 +6,7 @@ const Linkedin02Icon = (props: React.SVGProps<SVGSVGElement>) => (
     viewBox="0 0 24 24"
     width={24}
     height={24}
-    color={"--forground"}
+    color={"--foreground"}
     fill={"none"}
     {...props}
   >

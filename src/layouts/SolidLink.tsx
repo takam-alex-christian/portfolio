@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion, useAnimate } from "motion/react";
 
 import ArrowUpRight02Icon from "@/assets/arrow-up-right";
+import ArrowUpRight01Icon from "@/assets/arrow-up-right-01-stroke-rounded";
 
 function SolidLink({
   children,
@@ -37,7 +38,7 @@ function SolidLink({
         onMouseLeave={MouseLeaveHandler}
         href={href}
       >
-        <div className="group-hover:bg-[#1E1D1C] p-6 ">
+        <div className="group-hover:bg-linkhover p-6 ">
           {children}
           {/* <div className="w-4/5 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">{title}</h3>
@@ -46,8 +47,11 @@ function SolidLink({
               {from} - {to}
             </p>
           </div> */}
-          <motion.div ref={scope} className="absolute top-8 right-6">
-            <ArrowUpRight02Icon />
+          <motion.div
+            ref={scope}
+            className="absolute top-8 right-6 text-green-600"
+          >
+            <ArrowUpRight01Icon />
           </motion.div>
         </div>
       </Link>

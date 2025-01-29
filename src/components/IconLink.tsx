@@ -40,7 +40,7 @@ export default function IconLink({
       </Link>
       {desc && desc.length != 0 && (
         <motion.div
-          className="absolute -z-10 top-0 p-1 opacity-0 text-xs bg-surface rounded-md"
+          className="absolute -z-10 top-0 py-1 px-2 opacity-0 text-xs font-semibold bg-surface rounded-md"
           ref={scope}
         >
           {desc}

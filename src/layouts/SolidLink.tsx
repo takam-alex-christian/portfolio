@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { motion, useAnimate } from "motion/react";
 
-import ArrowUpRight02Icon from "@/assets/arrow-up-right";
 import ArrowUpRight01Icon from "@/assets/arrow-up-right-01-stroke-rounded";
 
 function SolidLink({

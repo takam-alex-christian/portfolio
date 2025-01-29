@@ -2,13 +2,8 @@
 
 import H1 from "@/components/H1";
 import SectionLayout from "@/layouts/SectionLayout";
-import Link04Icon from "@/assets/link-04-stroke-rounded";
-import ArrowUpRight02Icon from "@/assets/arrow-up-right";
-import Link from "next/link";
 
 import SolidLink from "@/layouts/SolidLink";
-
-import { motion, useAnimate } from "motion/react";
 
 function WorkHistoryItem({
   href,

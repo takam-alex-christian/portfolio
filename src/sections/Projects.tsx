@@ -1,16 +1,13 @@
-import Link from "next/link";
 import H1 from "@/components/H1";
 import SectionLayout from "@/layouts/SectionLayout";
 
-import DesctriptiveP from "@/components/DescriptiveP";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import { useAnimate, motion } from "motion/react";
 
 import iokeep from "@/assets/iokeep.png";
 import proactive from "@/assets/proactive.png";
 import portfolio_v2 from "@/assets/portfolio v2.png";
-import ArrowUpRight02Icon from "@/assets/arrow-up-right";
+
 import SolidLink from "@/layouts/SolidLink";
 
 function ProjectItem({

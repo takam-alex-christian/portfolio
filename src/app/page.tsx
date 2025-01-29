@@ -2,7 +2,7 @@ import ContactCard from "@/components/ContactCard";
 import ExperienceSection from "@/sections/Experience";
 import HomeSection from "@/sections/Home";
 import ProjectsSection from "@/sections/Projects";
-import { motion } from "motion/react";
+
 import PageFooter from "@/components/PageFooter";
 
 export default function Home() {

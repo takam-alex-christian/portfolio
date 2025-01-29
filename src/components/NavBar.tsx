@@ -9,7 +9,7 @@ import IconLink from "./IconLink";
 export default function NavBar() {
   return (
     <nav className="flex flex-col w-full items-center mt-7">
-      <div className="bg-surface bg-blur flex flex-row gap-6 rounded-xl py-2 px-4">
+      <div className="bg-surface flex flex-row gap-6 rounded-xl py-2 px-4">
         <IconLink desc={"Home"} svgIcon={<Home09Icon />} href="/home" />
         <IconLink
           desc={"Experience"}

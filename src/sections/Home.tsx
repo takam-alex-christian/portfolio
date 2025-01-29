@@ -27,7 +27,7 @@ export default function HomeSection() {
           <InfoBox number={10} text={["Clients", "served"]} />
         </div>
         <div className="flex flex-col gap-6 w-max items-start">
-          <button className=" cap-b w-max">Let&apos;'s get in touch</button>
+          <button className=" cap-b w-max">Let&apos;s get in touch</button>
           <Link
             href="#"
             className=" cap-l flex flex-row gap-2 font-semibold w-max border-2 border-black p-4 rounded-2xl"
@@ -50,7 +50,7 @@ export default function HomeSection() {
           >
             <VerticalScrollPointIcon />
           </motion.div>
-          <p>It&apos;'s not all, Keep Scrolling</p>
+          <p>It&apos;s not all, Keep Scrolling</p>
         </div>
       </div>
     </SectionLayout>

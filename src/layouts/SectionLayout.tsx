@@ -8,14 +8,14 @@ export default function SectionLayout({
 }) {
   return (
     <section className=" box-border pt-28">
-      <motion.div
+      <motion.section
         initial={{ opacity: 0, top: 40 }}
         whileInView={{ opacity: 1, top: 0 }}
         viewport={{ once: true }}
         className=""
       >
         {children}
-      </motion.div>
+      </motion.section>
     </section>
   );
 }

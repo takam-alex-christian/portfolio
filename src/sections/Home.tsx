@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "motion/react";
 
 import DescriptiveP from "@/components/DescriptiveP";
@@ -7,6 +8,7 @@ import SectionLayout from "@/layouts/SectionLayout";
 import H1 from "@/components/H1";
 import Link from "next/link";
 import Download04Icon from "@/assets/download-04-stroke-rounded";
+import VerticalScrollPointIcon from "@/assets/VerticalScrollPointIcon";
 export default function HomeSection() {
   return (
     <SectionLayout>
@@ -16,6 +18,7 @@ export default function HomeSection() {
           <DescriptiveP>
             Passionate about creating intuitive and engaging user experiences.
             Specialize in transforming ideas into beautifully crafted products.
+            Passionate about creating intuitive and engaging user experiences.
           </DescriptiveP>
         </div>
         <div className="flex flex-row gap-10 justify-start">
@@ -32,6 +35,22 @@ export default function HomeSection() {
             <Download04Icon />
             Download a copy of my cv
           </Link>
+        </div>
+
+        <div className="relative flex flex-row gap-2">
+          <motion.div
+            className="w-min"
+            initial={{ scale: 1 }}
+            animate={{ y: [0, -5, 5, 0], scale: [1, 1.1, 1] }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              easings: ["easeInOut", "backOut"],
+            }}
+          >
+            <VerticalScrollPointIcon />
+          </motion.div>
+          <p>It's not all, Keep Scrolling</p>
         </div>
       </div>
     </SectionLayout>

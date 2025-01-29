@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="  flex flex-col items-center justify-center">
       <main className="max-w-screen-lg">
-        <div className="flex lg:flex-row flex-col gap-10">
+        <div className="flex lg:flex-row flex-col gap-20">
           <div className="py-24">
             <ContactCard />
           </div>

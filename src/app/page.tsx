@@ -4,6 +4,7 @@ import HomeSection from "@/sections/Home";
 import ProjectsSection from "@/sections/Projects";
 
 import PageFooter from "@/components/PageFooter";
+import PinnedNotesSection from "@/sections/PinnedNotes";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
             </div>
             <div>
               <ProjectsSection />
+            </div>
+            <div>
+              <PinnedNotesSection />
             </div>
             <PageFooter />
           </div>

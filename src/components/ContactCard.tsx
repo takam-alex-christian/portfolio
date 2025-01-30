@@ -9,20 +9,28 @@ import GithubIcon from "@/assets/github-stroke-rounded";
 import InstagramIcon from "@/assets/instagram-stroke-rounded";
 import LinkedinIcon from "@/assets/linkedin-02-stroke-rounded";
 import NewTwitterIcon from "@/assets/new-twitter-stroke-rounded";
+import React from "react";
 
-function IconLink({
+function IconButtonLink({
   children,
   href,
 }: {
-  children: React.ReactNode;
+  children: React.ReactElement;
   href: string;
 }) {
-  return <Link href={href}>{children}</Link>;
+  return (
+    <Link
+      href={href}
+      className=" hover:bg-surface flex justify-center items-center rounded-2xl h-12 w-12"
+    >
+      {children}
+    </Link>
+  );
 }
 
 export default function ContactCard() {
   return (
-    <div className="sticky flex flex-col gap-32 lg:w-[344px] w-full top-9 items-center text-center bg-foreground  bg-surface dark:text-black py-6 px-8 rounded-2xl">
+    <div className="sticky flex flex-col gap-32 lg:w-[344px] w-full top-9 items-center text-center bg-surface dark:text-black py-6 px-8 rounded-2xl">
       <div>
         <div>
           <Image
@@ -40,19 +48,19 @@ export default function ContactCard() {
         <DescriptiveP>
           A Software Engineer who has developed countless innovative solutions.
         </DescriptiveP>
-        <div className="flex flex-row w-full items-center justify-center gap-4">
-          <IconLink href={"#"}>
+        <div className="flex flex-row w-full items-center justify-center gap-1">
+          <IconButtonLink href={"#"}>
             <GithubIcon />
-          </IconLink>
-          <IconLink href={"#"}>
+          </IconButtonLink>
+          <IconButtonLink href={"#"}>
             <InstagramIcon />
-          </IconLink>
-          <IconLink href={"#"}>
+          </IconButtonLink>
+          <IconButtonLink href={"#"}>
             <LinkedinIcon />
-          </IconLink>
-          <IconLink href={"#"}>
+          </IconButtonLink>
+          <IconButtonLink href={"#"}>
             <NewTwitterIcon />
-          </IconLink>
+          </IconButtonLink>
         </div>
       </div>
     </div>

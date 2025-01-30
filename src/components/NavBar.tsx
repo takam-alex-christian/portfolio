@@ -3,7 +3,8 @@
 import Home09Icon from "@/assets/home-09-stroke-rounded";
 import Briefcase01Icon from "@/assets/briefcase-01-stroke-rounded";
 import CodeFolderIcon from "@/assets/code-folder-stroke-rounded";
-import ToolsIcon from "@/assets/tools-stroke-rounded";
+// import ToolsIcon from "@/assets/tools-stroke-rounded";
+import NewsIcon from "@/assets/news-stroke-rounded";
 
 import IconLink from "./IconLink";
 export default function NavBar() {
@@ -17,7 +18,7 @@ export default function NavBar() {
           href="/home"
         />
         <IconLink desc={"Projects"} svgIcon={<CodeFolderIcon />} href="/home" />
-        <IconLink desc={"Stack"} svgIcon={<ToolsIcon />} href="/home" />
+        <IconLink desc={"Blog"} svgIcon={<NewsIcon />} href="/home" />
         {/* <IconLink svgIcon={<Home09Icon />} href="/home" /> */}
       </div>
     </nav>

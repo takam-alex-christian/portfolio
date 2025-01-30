@@ -21,7 +21,7 @@ function WorkHistoryItem({
   return (
     <div>
       <SolidLink href={href}>
-        <div className="w-4/5 flex flex-col gap-4">
+        <div className="w-full md:w-4/5 flex flex-col gap-0 md:gap-4">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p>{description}</p>
           <p>

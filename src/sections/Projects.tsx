@@ -25,15 +25,20 @@ function ProjectItem({
 }) {
   return (
     <SolidLink href={href}>
-      <div className="flex flex-row gap-6">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-6">
         <div className=" ">
-          <div className="rounded-md overflow-hidden">
+          <div className="rounded-md overflow-hidden w-fit">
             {imageSrc && (
-              <Image src={imageSrc} width={200} alt="Projects image" />
+              <Image
+                src={imageSrc}
+                // width={200}
+                alt="Projects image"
+                className="w-full md:w-[200px]"
+              />
             )}
           </div>
         </div>
-        <div className="flex flex-col gap-4 w-4/5">
+        <div className="flex flex-col gap-4 w-full md:w-4/5">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p>{description}</p>
         </div>
@@ -47,7 +52,7 @@ export default function ProjectsSection() {
     <SectionLayout>
       <div>
         <H1>Personal Projects</H1>
-        <div className="flex flex-col mt-6">
+        <div className="flex flex-col mt-6 gap-4 md:gap-0">
           <ProjectItem
             key={"iokeep"}
             imageSrc={iokeep}
@@ -70,8 +75,8 @@ export default function ProjectsSection() {
             href={"/"}
           />
         </div>
-        <div className="py-2 pl-6">
-          <DarkLink href="#">View full list of personal projects</DarkLink>
+        <div className="py-2 md:pl-6">
+          <DarkLink href="#">View all personal projects</DarkLink>
         </div>
       </div>
     </SectionLayout>

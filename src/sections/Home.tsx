@@ -12,7 +12,7 @@ import VerticalScrollPointIcon from "@/assets/VerticalScrollPointIcon";
 export default function HomeSection() {
   return (
     <SectionLayout>
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 text-center items-center md:text-left md:items-start">
         <div className="flex flex-col gap-4">
           <H1>SOFTWARE ENGINEER</H1>
           <DescriptiveP>
@@ -21,12 +21,12 @@ export default function HomeSection() {
             Passionate about creating intuitive and engaging user experiences.
           </DescriptiveP>
         </div>
-        <div className="flex flex-row gap-10 justify-start">
+        <div className="flex flex-row gap-8 md:gap-10 sm:justify-start">
           <InfoBox number={2} text={["Years of", "experience"]} />
           <InfoBox number={11} text={["Projects", "Delivered"]} />
           <InfoBox number={10} text={["Clients", "served"]} />
         </div>
-        <div className="flex flex-col gap-6 w-max items-start">
+        <div className="flex flex-col gap-6 w-max items-center md:items-start ">
           <button className=" cap-b w-max">Let&apos;s get in touch</button>
           <Link
             href="#"

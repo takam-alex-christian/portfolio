@@ -30,7 +30,7 @@ function IconButtonLink({
 
 export default function ContactCard() {
   return (
-    <div className="sticky flex flex-col gap-32 lg:w-[344px] w-full top-9 items-center text-center bg-surface dark:text-black py-6 px-8 rounded-2xl">
+    <div className="lg:sticky flex flex-col gap-32 lg:w-[344px] w-full lg:top-9 items-center text-center bg-surface dark:text-black py-6 px-8 rounded-2xl">
       <div>
         <div>
           <Image

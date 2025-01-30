@@ -8,13 +8,13 @@ import PinnedNotesSection from "@/sections/PinnedNotes";
 
 export default function Home() {
   return (
-    <div className="  flex flex-col items-center justify-center">
-      <main className="max-w-screen-lg">
-        <div className="flex lg:flex-row flex-col gap-20">
-          <div className="py-24">
+    <div className="flex lg:justify-center">
+      <main className="max-w-screen-lg w-full px-6 lg:px-0">
+        <div className="flex lg:flex-row flex-col lg:gap-20 ">
+          <div className="lg:py-24 py-6">
             <ContactCard />
           </div>
-          <div className="flex flex-col gap-10 ">
+          <div className="flex flex-col gap-10 w-full">
             <div>
               <HomeSection key={"home"} />
             </div>

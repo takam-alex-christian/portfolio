@@ -32,12 +32,12 @@ function SolidLink({
   return (
     <div>
       <Link
-        className="relative block group rounded-2xl overflow-hidden"
+        className="relative block group md:rounded-2xl overflow-hidden"
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={MouseLeaveHandler}
         href={href}
       >
-        <div className="group-hover:bg-linkhover p-6 ">
+        <div className="group-hover:bg-linkhover pt-0 md:p-6 ">
           {children}
           {/* <div className="w-4/5 flex flex-col gap-4">
             <h3 className="text-2xl font-semibold">{title}</h3>
@@ -48,7 +48,7 @@ function SolidLink({
           </div> */}
           <motion.div
             ref={scope}
-            className="absolute top-8 right-6 text-green-600"
+            className=" invisible md:visible md:absolute md:top-8 md:right-6 "
           >
             <ArrowUpRight01Icon />
           </motion.div>

@@ -10,6 +10,8 @@ import portfolio_v2 from "@/assets/portfolio v2.png";
 
 import SolidLink from "@/layouts/SolidLink";
 
+import DarkLink from "@/components/darklink";
+
 function ProjectItem({
   imageSrc,
   title,
@@ -67,6 +69,9 @@ export default function ProjectsSection() {
             description="Proactive is a web app which helps user to create and manage tasks"
             href={"/"}
           />
+        </div>
+        <div className="py-2 pl-6">
+          <DarkLink href="#">View full list of personal projects</DarkLink>
         </div>
       </div>
     </SectionLayout>

@@ -1,7 +1,6 @@
 import SectionLayout from "@/layouts/SectionLayout";
 import H1 from "@/components/H1";
 import DescriptiveP from "@/components/DescriptiveP";
-import Link from "next/link";
 import SolidLink from "@/layouts/SolidLink";
 import DarkLink from "@/components/darklink";
 

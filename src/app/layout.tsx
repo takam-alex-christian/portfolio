@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${PoppinsFont.className} antialiased relative`}>
         <NavBar />
         {children}
+        <Analytics />
       </body>
     </html>
   );

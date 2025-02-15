@@ -104,7 +104,7 @@ async function PinnedNotesSection() {
   }
 
   return (
-    <SectionLayout>
+    <SectionLayout id="blog">
       <H1>some thoughts</H1>
 
       {/* add pin notes feature */}
@@ -113,7 +113,9 @@ async function PinnedNotesSection() {
         return <NoteLink key={eachNoteItem._id} noteData={eachNoteItem} />;
       })}
       <div className=" py-4 flex flex-row ">
-        <DarkLink href="#">From Iokeep v3 Alpha</DarkLink>
+        <DarkLink href="https://iokeep-fe-v2.vercel.app/">
+          From Iokeep v3 Alpha
+        </DarkLink>
       </div>
     </SectionLayout>
   );

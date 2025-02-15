@@ -11,7 +11,7 @@ import Download04Icon from "@/assets/download-04-stroke-rounded";
 import VerticalScrollPointIcon from "@/assets/VerticalScrollPointIcon";
 export default function HomeSection() {
   return (
-    <SectionLayout>
+    <SectionLayout id="home">
       <div className="flex flex-col gap-12 text-center items-center md:text-left md:items-start">
         <div className="flex flex-col gap-4">
           <H1>SOFTWARE ENGINEER</H1>

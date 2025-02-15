@@ -46,7 +46,7 @@ export default function ContactCard() {
 
       <div className="flex flex-col gap-8">
         <DescriptiveP>
-          A Software Engineer who has developed countless innovative solutions.
+          Engineer by trade, problem solver by human nature.
         </DescriptiveP>
         <div className="flex flex-row w-full items-center justify-center gap-1">
           <IconButtonLink href={"#"}>

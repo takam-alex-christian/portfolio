@@ -33,6 +33,7 @@ export default function IconLink({
         onMouseEnter={linkHoverHandler}
         onMouseLeave={linkLeaveHandler}
         className="relative group bg-transparent"
+        scroll={true}
       >
         <div className="relative flex items-center justify-center w-8 h-8 rounded-lg ">
           {svgIcon}

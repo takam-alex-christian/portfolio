@@ -5,11 +5,13 @@ import ProjectsSection from "@/sections/Projects";
 
 import PageFooter from "@/components/PageFooter";
 import PinnedNotesSection from "@/sections/PinnedNotes";
+import Link from "next/link";
+import Home09Icon from "@/assets/home-09-stroke-rounded";
 
 export default function Home() {
   return (
     <div className="flex lg:justify-center">
-      <main className="max-w-screen-lg w-full px-6 lg:px-0">
+      <main className="relative max-w-screen-lg w-full px-6 lg:px-0">
         <div className="flex lg:flex-row flex-col lg:gap-20 ">
           <div className="lg:py-24 py-6">
             <ContactCard />
@@ -29,6 +31,14 @@ export default function Home() {
             </div>
             <PageFooter />
           </div>
+        </div>
+        <div className="fixed  bottom-2 right-2">
+          <Link
+            href="/#home"
+            className="block cursor-pointer rounded-lg p-2 bg-surface"
+          >
+            <Home09Icon />
+          </Link>
         </div>
       </main>
     </div>

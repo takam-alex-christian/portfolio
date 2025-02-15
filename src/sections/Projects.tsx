@@ -5,6 +5,7 @@ import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 import iokeep from "@/assets/iokeep.png";
+import iokeepv3 from "@/assets/iokeepv3.png";
 import proactive from "@/assets/proactive.png";
 import portfolio_v2 from "@/assets/portfolio v2.png";
 
@@ -27,7 +28,7 @@ function ProjectItem({
     <SolidLink href={href}>
       <div className="flex flex-col md:flex-row gap-4 md:gap-6">
         <div className=" ">
-          <div className="rounded-md overflow-hidden w-fit">
+          <div className="rounded-md overflow-hidden w-fit drop-shadow-md">
             {imageSrc && (
               <Image
                 src={imageSrc}
@@ -49,16 +50,16 @@ function ProjectItem({
 
 export default function ProjectsSection() {
   return (
-    <SectionLayout>
+    <SectionLayout id="projects">
       <div>
         <H1>Personal Projects</H1>
         <div className="flex flex-col mt-6 gap-4 md:gap-0">
           <ProjectItem
-            key={"iokeep"}
-            imageSrc={iokeep}
-            title={"IOKEEP"}
-            description="Iokeep is a digital rich-text note taking web application which allows users to create and manage notes accross devices"
-            href="/"
+            key={"Iokeepv3"}
+            imageSrc={iokeepv3}
+            title={"Iokeep v3 alpha"}
+            description="Iokeep is a WYSIWYG personal note taking web app which allows users to organize and share ideas. "
+            href="https://iokeep-fe-v2.vercel.app/"
           />
           <ProjectItem
             key={"Portfolio_v2"}
@@ -76,7 +77,9 @@ export default function ProjectsSection() {
           />
         </div>
         <div className="py-2 md:pl-6">
-          <DarkLink href="#">View all personal projects</DarkLink>
+          <DarkLink href="https://github.com/takam-alex-christian?tab=repositories">
+            View all personal projects
+          </DarkLink>
         </div>
       </div>
     </SectionLayout>

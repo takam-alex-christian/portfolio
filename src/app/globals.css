@@ -18,6 +18,9 @@
     --surface: #1e1d1c;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
 
 p {
   font-size: 16px;

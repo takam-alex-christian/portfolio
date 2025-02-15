@@ -34,13 +34,13 @@ function WorkHistoryItem({
 }
 export default function ExperienceSection() {
   return (
-    <SectionLayout>
+    <SectionLayout id="experience">
       <div>
         <H1>3+ Years of experience</H1>
       </div>
       <div className="flex flex-col mt-6">
         <WorkHistoryItem
-          href="/"
+          href="https://www.caelis-tech.studio/"
           title="Full-Stack Developer &#x2022; Caelis Tech Studio SARL"
           description="Developed components, part & entire front-end apps
 based on designs from our internal design team. Developed, deployed and maintained microservices

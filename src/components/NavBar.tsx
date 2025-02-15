@@ -11,14 +11,18 @@ export default function NavBar() {
   return (
     <nav className="flex flex-col w-full items-center mt-7">
       <div className="bg-surface flex flex-row gap-6 rounded-xl py-2 px-4">
-        <IconLink desc={"Home"} svgIcon={<Home09Icon />} href="/home" />
+        <IconLink desc={"Home"} svgIcon={<Home09Icon />} href="/#home" />
         <IconLink
           desc={"Experience"}
           svgIcon={<Briefcase01Icon />}
-          href="/home"
+          href="/#experience"
         />
-        <IconLink desc={"Projects"} svgIcon={<CodeFolderIcon />} href="/home" />
-        <IconLink desc={"Blog"} svgIcon={<NewsIcon />} href="/home" />
+        <IconLink
+          desc={"Projects"}
+          svgIcon={<CodeFolderIcon />}
+          href="/#projects"
+        />
+        <IconLink desc={"Blog"} svgIcon={<NewsIcon />} href="/#blog" />
         {/* <IconLink svgIcon={<Home09Icon />} href="/home" /> */}
       </div>
     </nav>

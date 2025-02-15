@@ -36,29 +36,36 @@ export default function ExperienceSection() {
   return (
     <SectionLayout>
       <div>
-        <H1>2 Years of experience</H1>
+        <H1>3+ Years of experience</H1>
       </div>
       <div className="flex flex-col mt-6">
         <WorkHistoryItem
           href="/"
-          title="Freelance"
-          description="aldf jalksdf klajsldfl kaklsdjflk lakds asdf asdf asdf "
-          from={"June 2018"}
-          to={"September 2018"}
+          title="Full-Stack Developer &#x2022; Caelis Tech Studio SARL"
+          description="Developed components, part & entire front-end apps
+based on designs from our internal design team. Developed, deployed and maintained microservices
+for clients' projects."
+          from={"January 2020"}
+          to={"December 2022"}
         />
         <WorkHistoryItem
           href="/"
-          title="Emile's Fake company"
-          description="aldf jalksdf klajsldfl kaklsdjflk lakds asdf asdf asdf "
+          title="Freelancer &#x2022; Ipetrade SARL"
+          description="Designed, developed and maintained Ipetrade's
+Inventory management APP to optimise the process of registering orders and shipping between Ipetrade locations in Cameroon.
+Collaborated with the foreign developer team that was developing Ipetrade E-commerce platform in China to acquire, test and consume Orange Money and MTN Mobile Money APIs using JavaScript, Nodejs, Express and Postman."
           from={"June 2018"}
-          to={"September 2018"}
+          to={"May 2019"}
         />
         <WorkHistoryItem
           href="/"
-          title="Sesco LTD"
-          description="aldf jalksdf klajsldfl kaklsdjflk lakds asdf asdf asdf "
-          from={"June 2018"}
-          to={"September 2018"}
+          title="Web Developer &#x2022; Sesco LTD"
+          description="Designed and Developed the Customer Dashboard on
+Sesco's E-commerce platform using HTML, CSS,
+JavaScript and PHP. Built internal software solutions according to
+stakeholder requirements ranging from excel macros to python scripts."
+          from={"June 2017"}
+          to={"September 2017"}
         />
       </div>
     </SectionLayout>

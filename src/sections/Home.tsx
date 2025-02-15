@@ -16,20 +16,20 @@ export default function HomeSection() {
         <div className="flex flex-col gap-4">
           <H1>SOFTWARE ENGINEER</H1>
           <DescriptiveP>
-            Passionate about creating intuitive and engaging user experiences.
-            Specialize in transforming ideas into beautifully crafted products.
-            Passionate about creating intuitive and engaging user experiences.
+            My name is Takam Alex Christian an experienced software engineer
+            with over 3 years of professional experience designing, developing,
+            deploying and maintaining web applications.
           </DescriptiveP>
         </div>
         <div className="flex flex-row gap-8 md:gap-10 sm:justify-start">
-          <InfoBox number={2} text={["Years of", "experience"]} />
+          <InfoBox number={3} text={["Years of", "experience"]} />
           <InfoBox number={11} text={["Projects", "Delivered"]} />
           <InfoBox number={10} text={["Clients", "served"]} />
         </div>
         <div className="flex flex-col gap-6 w-max items-center md:items-start ">
           <button className=" cap-b w-max">Let&apos;s get in touch</button>
           <Link
-            href="#"
+            href="Alex-Christian-Takam_res.pdf"
             className=" cap-l flex flex-row gap-2 font-semibold w-max border-2 border-black p-4 rounded-2xl"
           >
             <Download04Icon />

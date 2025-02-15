@@ -4,7 +4,6 @@ import SectionLayout from "@/layouts/SectionLayout";
 import Image from "next/image";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-import iokeep from "@/assets/iokeep.png";
 import iokeepv3 from "@/assets/iokeepv3.png";
 import proactive from "@/assets/proactive.png";
 import portfolio_v2 from "@/assets/portfolio v2.png";
